@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model MongoDB.Sample.Models.Shipper
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="widht=device-widht" />
+    <title>Update</title>
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Update Shipper</h2>
+    <p>Shipper ID=@Model.Id</p>
+    <hr />
+    <form asp-controller="Home" asp-action="Update" method="post" enctype="multipart/form-data">
+        <input type="text" asp-for="CompanyName" value="@Model.CompanyName" />
+        <br />
+        <br />
+        <input type="text" asp-for="Phone" value="@Model.Phone" />
+        <br />
+        <br />
+        <button type="submit">Update Shipper</button>
+    </form>
+</body>
+</html>

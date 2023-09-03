@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>b48a55d5-4ddb-47d3-b564-88d681f3cb5e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.21.0" />
+  </ItemGroup>
+
+</Project>
